@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>takz — notes, tasks and a terminal in one place</title>
+<meta name="description" content="takz is a local-first desktop app for macOS built on a folder of plain .md files: tasks, notes and a real zsh terminal, side by side. No cloud, no proprietary database, no lock-in.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230D0D0D'/%3E%3Cpath d='M7 12h18M16 6v20' stroke='%23ECECE7' stroke-width='4'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;700;800;900&family=JetBrains+Mono:wght@500;700&display=swap">
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+
+<a class="btn skip-link" href="#main">SKIP TO CONTENT</a>
+
+<!-- ── Nav ─────────────────────────────────────────────────────────────── -->
+<header class="nav">
+  <div class="wrap nav__inner">
+    <a class="nav__brand" href="index.html" aria-current="page">takz</a>
+    <nav class="nav__links" aria-label="Primary">
+      <a href="roadmap.html">ROADMAP</a>
+      <a href="https://github.com/nicolasib/takz-releases/releases/latest">DOWNLOAD</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main" tabindex="-1">
+
+  <!-- ── Hero ──────────────────────────────────────────────────────────── -->
+  <section class="hero">
+    <div class="wrap">
+      <p class="eyebrow">// LOCAL-FIRST MACOS APP</p>
+
+      <h1 class="display hero__title">NOTES, TASKS<br class="lb"> AND A TERMINAL<br class="lb"> IN <span class="scribble">ONE PLACE.<svg class="scribble__mark" viewBox="0 0 640 36" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path d="M6 21C118 7 258 5 392 10c78 3 164 9 240 2"/><path d="M40 31C158 21 300 19 430 24c68 2 138 5 186 1"/></svg></span></h1>
+
+      <div class="hero__foot">
+        <div class="hero__side">
+          <p class="meta">v1.0.0 · APPLE SILICON · MACOS 12+</p>
+        </div>
+        <div class="hero__main">
+          <p class="hero__lede">takz is a desktop app for macOS built on a folder of plain <code>.md</code> files. No cloud, no proprietary database, no lock-in. Your vault stays yours — editable by Obsidian, by Claude Code, by anything that can open a text file.</p>
+          <div class="hero__actions">
+            <span class="glow"><a class="btn btn--lime" href="https://github.com/nicolasib/takz-releases/releases/latest">DOWNLOAD FOR MACOS</a></span>
+            <a class="btn" href="roadmap.html">SEE THE ROADMAP</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="wrap hero__shot">
+      <div class="shot shot--tilt-a chamfer">
+        <img src="assets/hero.png" width="2000" height="1285" alt="takz with two panes side by side: a zsh terminal running ls and grep over the vault on the left, and the rendered orbital-architecture note with its properties panel on the right.">
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Marquee ───────────────────────────────────────────────────────── -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee__track">
+      <span class="marquee__item">TASKS // NOTES // TERMINAL // MARKDOWN // LOCAL-FIRST //</span>
+      <span class="marquee__item">TASKS // NOTES // TERMINAL // MARKDOWN // LOCAL-FIRST //</span>
+    </div>
+  </div>
+
+  <!-- ── The three pillars ─────────────────────────────────────────────── -->
+  <section class="section">
+    <div class="wrap">
+      <div class="split split--3">
+
+        <article>
+          <p class="eyebrow">// 01 TASKS</p>
+          <h2 class="pillar__title">A task is a file.</h2>
+          <p class="pillar__body"><code>type: task</code> in the frontmatter, plus <code>status</code>, <code>due</code>, tags and whatever custom fields you invent. Drag a card across the Kanban and what changes is the file's frontmatter. Kanban, a filterable table and a 'my day' view, all reading the same files.</p>
+        </article>
+
+        <article>
+          <p class="eyebrow">// 02 NOTES</p>
+          <h2 class="pillar__title">Markdown, live.</h2>
+          <p class="pillar__body">A live-preview editor on CodeMirror 6. <code>[[wikilinks]]</code> with autocomplete and backlinks, frontmatter as an editable properties panel, tables you edit in place, and a file explorer over the whole vault.</p>
+        </article>
+
+        <article>
+          <p class="eyebrow">// 03 TERMINAL</p>
+          <h2 class="pillar__title">A real shell, in a tab.</h2>
+          <p class="pillar__body">zsh, as many tabs as you want, rooted at your vault. Built for one thing above all: running Claude Code beside the notes it's writing about.</p>
+        </article>
+
+      </div>
+
+      <div class="pillars__shots">
+        <figure class="shot-figure">
+          <figcaption class="meta">FIG. 01 · KANBAN</figcaption>
+          <div class="shot shot--tilt-b chamfer">
+            <img src="assets/tasks.png" width="2000" height="1285" loading="lazy" alt="The takz Kanban board with three populated columns — Todo with five cards, Doing with two and Done with two — each card showing its tags, its priority and, where set, a due date.">
+          </div>
+        </figure>
+
+        <figure class="shot-figure">
+          <figcaption class="meta">FIG. 02 · LIVE PREVIEW</figcaption>
+          <div class="shot shot--tilt-a chamfer">
+            <img src="assets/notes.png" width="2000" height="1285" loading="lazy" alt="The orbital-architecture note filling the takz window: an editable properties panel on top, then live-preview markdown with a rendered table and wikilinks.">
+          </div>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Features ──────────────────────────────────────────────────────── -->
+  <section class="section features">
+    <div class="wrap">
+      <h2 class="sr-only">Features</h2>
+      <div class="features__grid">
+
+        <article class="card chamfer">
+          <div class="card__body chamfer">
+            <h3 class="card__title">SPLITS &amp; TAB DRAG</h3>
+            <p class="card__text">Split any pane, nest them, drag tabs between them. The layout is remembered per vault.</p>
+          </div>
+        </article>
+
+        <article class="card chamfer">
+          <div class="card__body chamfer">
+            <h3 class="card__title">THEMES</h3>
+            <p class="card__text">Three-layer theming. Import any tweakcn theme, then override colors, radius and four font slots.</p>
+          </div>
+        </article>
+
+        <article class="card chamfer">
+          <div class="card__body chamfer">
+            <h3 class="card__title">QUICK SWITCHER</h3>
+            <p class="card__text"><code>Cmd+P</code> across names, titles and aliases. <code>Cmd+Shift+F</code> for full-text with snippets.</p>
+          </div>
+        </article>
+
+        <article class="card chamfer">
+          <div class="card__body chamfer">
+            <h3 class="card__title">CODE EDITOR</h3>
+            <p class="card__text">Open <code>.ts</code>, <code>.py</code>, <code>.json</code>, <code>.css</code> with syntax highlight, line numbers and find &amp; replace.</p>
+          </div>
+        </article>
+
+        <article class="card chamfer">
+          <div class="card__body chamfer">
+            <h3 class="card__title">HTML PREVIEW</h3>
+            <p class="card__text">Toggle any <code>.html</code> between source and rendered page. <code>Cmd+R</code> to refresh.</p>
+          </div>
+        </article>
+
+        <article class="card chamfer">
+          <div class="card__body chamfer">
+            <h3 class="card__title">MCP SERVER</h3>
+            <p class="card__text">takz exposes its own MCP server. Claude Code, in the terminal tab, can open files, create notes and move Kanban cards — in the window you are looking at.</p>
+          </div>
+        </article>
+
+        <article class="card chamfer">
+          <div class="card__body chamfer">
+            <h3 class="card__title">EXTERNAL EDITS</h3>
+            <p class="card__text">Obsidian or an agent can rewrite the vault under you. takz notices, and never silently overwrites your unsaved buffer.</p>
+          </div>
+        </article>
+
+        <article class="card chamfer">
+          <div class="card__body chamfer">
+            <h3 class="card__title">ATOMIC WRITES</h3>
+            <p class="card__text">Unknown frontmatter fields, formatting and syntax the app did not author survive every single write.</p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <hr class="rule">
+
+  <!-- ── Download — a band: heading at one edge, the CTA at the other ──── -->
+  <section class="section">
+    <div class="wrap bar">
+      <h2 class="h2"><span class="slash" aria-hidden="true">//</span>GET IT</h2>
+      <div class="bar__end">
+        <a class="btn btn--lime btn--lg" href="https://github.com/nicolasib/takz-releases/releases/latest">DOWNLOAD FOR MACOS</a>
+        <p class="meta">takz-1.0.0-arm64.dmg · APPLE SILICON · MACOS 12 OR NEWER</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── The inverted tail: the honest part beside the updater ─────────── -->
+  <div class="section section--invert">
+    <div class="wrap">
+      <div class="split split--lead">
+
+        <section>
+          <h2 class="h2"><span class="slash" aria-hidden="true">//</span>THE HONEST PART</h2>
+          <div class="prose">
+            <p>takz is signed ad-hoc, not with an Apple Developer ID, and it is not notarized. The first time you open it, macOS will refuse. This is the whole workaround, and you only do it once:</p>
+            <pre class="code chamfer"><code>xattr -dr com.apple.quarantine /Applications/takz.app</code></pre>
+            <p>Or: System Settings → Privacy &amp; Security → Open Anyway. <mark class="mark">Once is all it takes — the updates the app installs for itself are never quarantined, so this never comes back.</mark></p>
+          </div>
+        </section>
+
+        <section>
+          <h2 class="h2"><span class="slash" aria-hidden="true">//</span>IT UPDATES ITSELF</h2>
+          <div class="prose">
+            <p>takz checks a static JSON feed on launch and every six hours. When a new version exists it downloads in the background and verifies its SHA-256 — and then it waits. It never restarts on its own: you click <strong>Restart to update</strong> when your terminals are done. If anything goes wrong mid-swap, the previous app is put back.</p>
+          </div>
+        </section>
+
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<!-- ── Footer ──────────────────────────────────────────────────────────── -->
+<footer class="footer section--invert">
+  <div class="wrap footer__inner">
+    <p class="footer__brand">takz — built by Nicolas Ibraim</p>
+    <nav class="footer__links" aria-label="Footer">
+      <a href="roadmap.html">ROADMAP</a>
+      <a href="https://github.com/nicolasib/takz-releases/releases/latest">RELEASES</a>
+    </nav>
+    <p class="meta">UPDATED JULY 2026</p>
+  </div>
+</footer>
+
+</body>
+</html>

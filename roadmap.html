@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>takz — roadmap</title>
+<meta name="description" content="What's shipped in takz, what's in progress, what's next and what's later — curated from the project roadmap.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230D0D0D'/%3E%3Cpath d='M7 12h18M16 6v20' stroke='%23ECECE7' stroke-width='4'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;700;800;900&family=JetBrains+Mono:wght@500;700&display=swap">
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+
+<a class="btn skip-link" href="#main">SKIP TO CONTENT</a>
+
+<!-- ── Nav ─────────────────────────────────────────────────────────────── -->
+<header class="nav">
+  <div class="wrap nav__inner">
+    <a class="nav__brand" href="index.html">takz</a>
+    <nav class="nav__links" aria-label="Primary">
+      <a href="roadmap.html" aria-current="page">ROADMAP</a>
+      <a href="https://github.com/nicolasib/takz-releases/releases/latest">DOWNLOAD</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main" tabindex="-1">
+
+  <!-- ── Title ─────────────────────────────────────────────────────────── -->
+  <section class="section roadmap-header">
+    <div class="wrap">
+      <h1 class="display roadmap-title">ROADMAP</h1>
+      <p class="meta">UPDATED 2026-07-29 · v1.0.0</p>
+    </div>
+  </section>
+
+  <hr class="rule">
+
+  <!-- ── The four groups ───────────────────────────────────────────────── -->
+  <section class="section roadmap-groups">
+    <div class="wrap">
+
+      <div class="roadmap-group">
+        <h2 class="h2"><span class="slash" aria-hidden="true">//</span>SHIPPED</h2>
+        <dl class="roadmap-list">
+          <div class="roadmap-item">
+            <dt class="roadmap-item__title">Vault &amp; editor</dt>
+            <dd class="roadmap-item__text">File explorer, markdown editor on CodeMirror 6, atomic writes, external-edit conflict detection.</dd>
+          </div>
+          <div class="roadmap-item">
+            <dt class="roadmap-item__title">Terminal</dt>
+            <dd class="roadmap-item__text">Real zsh tabs rooted at the vault, with splits.</dd>
+          </div>
+          <div class="roadmap-item">
+            <dt class="roadmap-item__title">Theming</dt>
+            <dd class="roadmap-item__text">Three-layer themes, tweakcn import, per-slot font and color overrides.</dd>
+          </div>
+          <div class="roadmap-item">
+            <dt class="roadmap-item__title">Tasks</dt>
+            <dd class="roadmap-item__text">Kanban, filterable table and "my day" — over <code>type: task</code> files.</dd>
+          </div>
+          <div class="roadmap-item">
+            <dt class="roadmap-item__title">Links</dt>
+            <dd class="roadmap-item__text">Wikilinks with autocomplete and backlinks, properties panel, live preview, rename-updates-links.</dd>
+          </div>
+          <div class="roadmap-item">
+            <dt class="roadmap-item__title">Workspace</dt>
+            <dd class="roadmap-item__text">Nested splits, tab drag &amp; drop, layout remembered per vault.</dd>
+          </div>
+          <div class="roadmap-item">
+            <dt class="roadmap-item__title">Quick switcher</dt>
+            <dd class="roadmap-item__text"><code>Cmd+P</code> by name and title, <code>Cmd+Shift+F</code> full-text.</dd>
+          </div>
+          <div class="roadmap-item">
+            <dt class="roadmap-item__title">Integrated titlebar</dt>
+            <dd class="roadmap-item__text">Obsidian-style chrome, collapsible sidebar.</dd>
+          </div>
+          <div class="roadmap-item">
+            <dt class="roadmap-item__title">WYSIWYG tables</dt>
+            <dd class="roadmap-item__text">Markdown tables edited in place, with row and column drag.</dd>
+          </div>
+          <div class="roadmap-item">
+            <dt class="roadmap-item__title">Code editor</dt>
+            <dd class="roadmap-item__text">Non-markdown files with syntax highlight and line numbers.</dd>
+          </div>
+          <div class="roadmap-item">
+            <dt class="roadmap-item__title">HTML preview</dt>
+            <dd class="roadmap-item__text">Source ↔ rendered toggle for <code>.html</code>.</dd>
+          </div>
+          <div class="roadmap-item">
+            <dt class="roadmap-item__title">MCP server</dt>
+            <dd class="roadmap-item__text">The app exposes tools that let an agent drive its own UI.</dd>
+          </div>
+          <div class="roadmap-item">
+            <dt class="roadmap-item__title">Packaging &amp; self-update</dt>
+            <dd class="roadmap-item__text">Ad-hoc signed <code>.dmg</code>, and an updater that swaps the bundle without a reinstall.</dd>
+          </div>
+        </dl>
+      </div>
+
+      <div class="roadmap-group">
+        <h2 class="h2"><span class="slash" aria-hidden="true">//</span>IN PROGRESS</h2>
+        <dl class="roadmap-list">
+          <div class="roadmap-item">
+            <dt class="roadmap-item__title">The 1.0 release</dt>
+            <dd class="roadmap-item__text"><mark class="mark">This site, and one command that builds, publishes and ships an update.</mark></dd>
+          </div>
+        </dl>
+      </div>
+
+      <div class="roadmap-group">
+        <h2 class="h2"><span class="slash" aria-hidden="true">//</span>NEXT</h2>
+        <dl class="roadmap-list">
+          <div class="roadmap-item">
+            <dt class="roadmap-item__title">Pane nav bar</dt>
+            <dd class="roadmap-item__text">Back/forward history per pane, clickable breadcrumb, a fixed home for the reading-mode toggle.</dd>
+          </div>
+          <div class="roadmap-item">
+            <dt class="roadmap-item__title">Inline title</dt>
+            <dd class="roadmap-item__text">The file name as a big editable title at the top of the document.</dd>
+          </div>
+          <div class="roadmap-item">
+            <dt class="roadmap-item__title">Status bar</dt>
+            <dd class="roadmap-item__text">Word count, property count and backlink count for the active file.</dd>
+          </div>
+          <div class="roadmap-item">
+            <dt class="roadmap-item__title">Shrinking tabs</dt>
+            <dd class="roadmap-item__text">Tabs that narrow like Chrome's instead of scrolling sideways.</dd>
+          </div>
+          <div class="roadmap-item">
+            <dt class="roadmap-item__title">Kanban checkbox</dt>
+            <dd class="roadmap-item__text">Complete a task from the card, without opening the sidesheet.</dd>
+          </div>
+          <div class="roadmap-item">
+            <dt class="roadmap-item__title">Middle-click to close</dt>
+            <dd class="roadmap-item__text">Scroll-wheel click closes a tab.</dd>
+          </div>
+          <div class="roadmap-item">
+            <dt class="roadmap-item__title">Create from the tree</dt>
+            <dd class="roadmap-item__text">"New note" and "New folder" inside the folder you right-clicked.</dd>
+          </div>
+          <div class="roadmap-item">
+            <dt class="roadmap-item__title">File icons &amp; colors</dt>
+            <dd class="roadmap-item__text">An icon per file type, and a color you pick per item.</dd>
+          </div>
+        </dl>
+      </div>
+
+      <div class="roadmap-group">
+        <h2 class="h2"><span class="slash" aria-hidden="true">//</span>LATER</h2>
+        <dl class="roadmap-list">
+          <div class="roadmap-item">
+            <dt class="roadmap-item__title">Templates</dt>
+            <dd class="roadmap-item__text">Skeletons for new notes and tasks.</dd>
+          </div>
+          <div class="roadmap-item">
+            <dt class="roadmap-item__title">Graph view</dt>
+            <dd class="roadmap-item__text">The vault as a graph of links.</dd>
+          </div>
+          <div class="roadmap-item">
+            <dt class="roadmap-item__title">On-disk index cache</dt>
+            <dd class="roadmap-item__text">Instant boot on a large vault.</dd>
+          </div>
+          <div class="roadmap-item">
+            <dt class="roadmap-item__title">Git panel</dt>
+            <dd class="roadmap-item__text">Status, staging, commit and branches — with vault backup as the point.</dd>
+          </div>
+          <div class="roadmap-item">
+            <dt class="roadmap-item__title">Autosave</dt>
+            <dd class="roadmap-item__text">Obsidian-style idle save, with a toggle.</dd>
+          </div>
+          <div class="roadmap-item">
+            <dt class="roadmap-item__title">Quick actions</dt>
+            <dd class="roadmap-item__text">Configurable prompts as buttons: one click spawns Claude Code and the result lands in the app.</dd>
+          </div>
+          <div class="roadmap-item">
+            <dt class="roadmap-item__title">Calendar &amp; daily note</dt>
+            <dd class="roadmap-item__text">A month view where every day is a note, half written by hand and half by an agent.</dd>
+          </div>
+          <div class="roadmap-item">
+            <dt class="roadmap-item__title">Blocked cards</dt>
+            <dd class="roadmap-item__text">Mark a Kanban card blocked, with a reason in the frontmatter.</dd>
+          </div>
+        </dl>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<!-- ── Footer ──────────────────────────────────────────────────────────── -->
+<footer class="footer section--invert">
+  <div class="wrap footer__inner">
+    <p class="footer__brand">takz — built by Nicolas Ibraim</p>
+    <nav class="footer__links" aria-label="Footer">
+      <a href="roadmap.html" aria-current="page">ROADMAP</a>
+      <a href="https://github.com/nicolasib/takz-releases/releases/latest">RELEASES</a>
+    </nav>
+    <p class="meta">UPDATED JULY 2026</p>
+  </div>
+</footer>
+
+</body>
+</html>
