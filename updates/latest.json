@@ -1,9 +1,9 @@
 {
-  "version": "1.0.0",
-  "url": "https://github.com/nicolasib/takz-releases/releases/download/v1.0.0/takz-1.0.0-arm64.zip",
-  "sha256": "1c4c87c0faa985f08dd4e96fc6dcf3abf9a894625ca40af1f4bb7e26020c0cbd",
-  "size": 130868461,
-  "pubDate": "2026-07-29T23:20:04.677Z",
-  "notes": "First public release.\n\nNotes, tasks and a real zsh terminal over a plain folder of markdown files.\nKanban and table views over `type: task` frontmatter, a live-preview markdown\neditor with wikilinks and backlinks, multi-language code editing, HTML preview,\nand an MCP server that lets Claude Code drive the app.\n\nmacOS 12 or later, Apple Silicon only. The first install needs one extra step\nto get past Gatekeeper — see the download page.",
+  "version": "1.0.1",
+  "url": "https://github.com/nicolasib/takz-releases/releases/download/v1.0.1/takz-1.0.1-arm64.zip",
+  "sha256": "53f3cd35ee7d1edc3395ce5970db1ab8bb12dbc2d9838b2f8da3bff68562a2c8",
+  "size": 130868271,
+  "pubDate": "2026-07-29T23:30:24.254Z",
+  "notes": "Verifies the update path.\n\nSame build as 1.0.0 with the version bumped — published to exercise the\ndownload, hash check and bundle swap end to end. No functional changes.",
   "minMacOS": "12.0"
 }
