@@ -1,9 +1,9 @@
 {
-  "version": "1.0.1",
-  "url": "https://github.com/nicolasib/takz-releases/releases/download/v1.0.1/takz-1.0.1-arm64.zip",
-  "sha256": "53f3cd35ee7d1edc3395ce5970db1ab8bb12dbc2d9838b2f8da3bff68562a2c8",
-  "size": 130868271,
-  "pubDate": "2026-07-29T23:30:24.254Z",
-  "notes": "Verifies the update path.\n\nSame build as 1.0.0 with the version bumped — published to exercise the\ndownload, hash check and bundle swap end to end. No functional changes.",
+  "version": "1.1.0",
+  "url": "https://github.com/nicolasib/takz-releases/releases/download/v1.1.0/takz-1.1.0-arm64.zip",
+  "sha256": "9d48cab781b245a0cb6e3b430f90fb9288cbae46a3eff1c66228aea66f7ee913",
+  "size": 130873699,
+  "pubDate": "2026-07-30T19:46:55.966Z",
+  "notes": "Six gestures that were missing.\n\nTabs now shrink to fit the strip instead of scrolling out of reach, and the\nmiddle mouse button closes one — with the same unsaved-changes prompt the ×\nalready had.\n\nIn the file explorer, \"New note\" and \"New folder\" moved into the right-click\nmenu and the name field now appears inside the folder you picked, at its place\nin the tree. Every file type gets its own icon, and any file or folder can be\ntinted with one of seven colors that stay put when you switch themes — the\npalette lives in Settings → Appearance, with a per-color reset.\n\nTwo more entries in that menu: **Copy path**, which puts the file's absolute\npath on the clipboard, and **Reveal in Finder**, which selects a file in its\nfolder or opens a folder directly.",
   "minMacOS": "12.0"
 }
