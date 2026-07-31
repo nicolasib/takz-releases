@@ -32,7 +32,7 @@
   <section class="section roadmap-header">
     <div class="wrap">
       <h1 class="display roadmap-title">ROADMAP</h1>
-      <p class="meta">UPDATED 2026-07-29 · v1.0.0</p>
+      <p class="meta">UPDATED 2026-07-31 · v1.2.0</p>
     </div>
   </section>
 
@@ -97,15 +97,29 @@
             <dt class="roadmap-item__title">Packaging &amp; self-update</dt>
             <dd class="roadmap-item__text">Ad-hoc signed <code>.dmg</code>, and an updater that swaps the bundle without a reinstall.</dd>
           </div>
-        </dl>
-      </div>
-
-      <div class="roadmap-group">
-        <h2 class="h2"><span class="slash" aria-hidden="true">//</span>IN PROGRESS</h2>
-        <dl class="roadmap-list">
           <div class="roadmap-item">
-            <dt class="roadmap-item__title">The 1.0 release</dt>
-            <dd class="roadmap-item__text"><mark class="mark">This site, and one command that builds, publishes and ships an update.</mark></dd>
+            <dt class="roadmap-item__title">Tab gestures</dt>
+            <dd class="roadmap-item__text">Tabs shrink to fit the strip instead of scrolling out of reach, and middle-click closes one.</dd>
+          </div>
+          <div class="roadmap-item">
+            <dt class="roadmap-item__title">Explorer menu</dt>
+            <dd class="roadmap-item__text">Create a note or folder inside the one you right-clicked, an icon per file type, a color per item, plus copy path and reveal in Finder.</dd>
+          </div>
+          <div class="roadmap-item">
+            <dt class="roadmap-item__title">Pane navigation</dt>
+            <dd class="roadmap-item__text">Back and forward through the notes you visited in that pane, and a breadcrumb whose folders open the explorer to them.</dd>
+          </div>
+          <div class="roadmap-item">
+            <dt class="roadmap-item__title">Inline title</dt>
+            <dd class="roadmap-item__text">The document's name as a big editable title — editing it rewrites the frontmatter or renames the file, updating wikilinks either way.</dd>
+          </div>
+          <div class="roadmap-item">
+            <dt class="roadmap-item__title">Status bar</dt>
+            <dd class="roadmap-item__text">Words, characters, properties and backlinks for the focused note, in a strip that stays put when focus moves elsewhere.</dd>
+          </div>
+          <div class="roadmap-item">
+            <dt class="roadmap-item__title">The document column</dt>
+            <dd class="roadmap-item__text">Line numbers that respect the theme and sit in the margin, and text that never touches the edge of a narrow pane.</dd>
           </div>
         </dl>
       </div>
@@ -114,36 +128,28 @@
         <h2 class="h2"><span class="slash" aria-hidden="true">//</span>NEXT</h2>
         <dl class="roadmap-list">
           <div class="roadmap-item">
-            <dt class="roadmap-item__title">Pane nav bar</dt>
-            <dd class="roadmap-item__text">Back/forward history per pane, clickable breadcrumb, a fixed home for the reading-mode toggle.</dd>
+            <dt class="roadmap-item__title">Terminal tabs that say what they are</dt>
+            <dd class="roadmap-item__text">A name you choose and an icon of their own, instead of <code>zsh 1</code>, <code>zsh 2</code>, <code>zsh 3</code>.</dd>
           </div>
           <div class="roadmap-item">
-            <dt class="roadmap-item__title">Inline title</dt>
-            <dd class="roadmap-item__text">The file name as a big editable title at the top of the document.</dd>
+            <dt class="roadmap-item__title">Open a terminal from the strip</dt>
+            <dd class="roadmap-item__text">A visible button that opens one where you want it — beside or below — instead of a shortcut you have to know about.</dd>
           </div>
           <div class="roadmap-item">
-            <dt class="roadmap-item__title">Status bar</dt>
-            <dd class="roadmap-item__text">Word count, property count and backlink count for the active file.</dd>
-          </div>
-          <div class="roadmap-item">
-            <dt class="roadmap-item__title">Shrinking tabs</dt>
-            <dd class="roadmap-item__text">Tabs that narrow like Chrome's instead of scrolling sideways.</dd>
+            <dt class="roadmap-item__title">Overflow tab menu</dt>
+            <dd class="roadmap-item__text">The tabs that no longer fit go into a menu rather than off the edge.</dd>
           </div>
           <div class="roadmap-item">
             <dt class="roadmap-item__title">Kanban checkbox</dt>
             <dd class="roadmap-item__text">Complete a task from the card, without opening the sidesheet.</dd>
           </div>
           <div class="roadmap-item">
-            <dt class="roadmap-item__title">Middle-click to close</dt>
-            <dd class="roadmap-item__text">Scroll-wheel click closes a tab.</dd>
+            <dt class="roadmap-item__title">Blocked cards</dt>
+            <dd class="roadmap-item__text">Mark a Kanban card blocked, with a reason in the frontmatter.</dd>
           </div>
           <div class="roadmap-item">
-            <dt class="roadmap-item__title">Create from the tree</dt>
-            <dd class="roadmap-item__text">"New note" and "New folder" inside the folder you right-clicked.</dd>
-          </div>
-          <div class="roadmap-item">
-            <dt class="roadmap-item__title">File icons &amp; colors</dt>
-            <dd class="roadmap-item__text">An icon per file type, and a color you pick per item.</dd>
+            <dt class="roadmap-item__title">Edit a card in place</dt>
+            <dd class="roadmap-item__text">Rewrite a task's text from the board, changing the real source behind it.</dd>
           </div>
         </dl>
       </div>
@@ -152,24 +158,16 @@
         <h2 class="h2"><span class="slash" aria-hidden="true">//</span>LATER</h2>
         <dl class="roadmap-list">
           <div class="roadmap-item">
-            <dt class="roadmap-item__title">Templates</dt>
-            <dd class="roadmap-item__text">Skeletons for new notes and tasks.</dd>
-          </div>
-          <div class="roadmap-item">
-            <dt class="roadmap-item__title">Graph view</dt>
-            <dd class="roadmap-item__text">The vault as a graph of links.</dd>
-          </div>
-          <div class="roadmap-item">
-            <dt class="roadmap-item__title">On-disk index cache</dt>
-            <dd class="roadmap-item__text">Instant boot on a large vault.</dd>
+            <dt class="roadmap-item__title">Autosave</dt>
+            <dd class="roadmap-item__text">Obsidian-style idle save, with a toggle.</dd>
           </div>
           <div class="roadmap-item">
             <dt class="roadmap-item__title">Git panel</dt>
             <dd class="roadmap-item__text">Status, staging, commit and branches — with vault backup as the point.</dd>
           </div>
           <div class="roadmap-item">
-            <dt class="roadmap-item__title">Autosave</dt>
-            <dd class="roadmap-item__text">Obsidian-style idle save, with a toggle.</dd>
+            <dt class="roadmap-item__title">Templates</dt>
+            <dd class="roadmap-item__text">Skeletons for new notes and tasks.</dd>
           </div>
           <div class="roadmap-item">
             <dt class="roadmap-item__title">Quick actions</dt>
@@ -180,8 +178,16 @@
             <dd class="roadmap-item__text">A month view where every day is a note, half written by hand and half by an agent.</dd>
           </div>
           <div class="roadmap-item">
-            <dt class="roadmap-item__title">Blocked cards</dt>
-            <dd class="roadmap-item__text">Mark a Kanban card blocked, with a reason in the frontmatter.</dd>
+            <dt class="roadmap-item__title">On-disk index cache</dt>
+            <dd class="roadmap-item__text">Instant boot on a large vault.</dd>
+          </div>
+          <div class="roadmap-item">
+            <dt class="roadmap-item__title">Graph view</dt>
+            <dd class="roadmap-item__text">The vault as a graph of links.</dd>
+          </div>
+          <div class="roadmap-item">
+            <dt class="roadmap-item__title">More than one vault</dt>
+            <dd class="roadmap-item__text">Two vaults open side by side, in their own windows.</dd>
           </div>
         </dl>
       </div>
