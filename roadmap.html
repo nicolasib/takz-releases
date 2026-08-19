@@ -32,7 +32,7 @@
   <section class="section roadmap-header">
     <div class="wrap">
       <h1 class="display roadmap-title">ROADMAP</h1>
-      <p class="meta">UPDATED 2026-08-19 · v1.10.0</p>
+      <p class="meta">UPDATED 2026-08-19 · v1.10.1</p>
     </div>
   </section>
 
@@ -151,7 +151,7 @@
           </div>
           <div class="roadmap-item">
             <dt class="roadmap-item__title">The terminal speaks</dt>
-            <dd class="roadmap-item__text">The tab strip finally says what is going on inside a terminal without you opening it. A tab carries what the process announces it is doing — the name you gave it still wins, and the process title never reaches disk — and it lights up when the agent stops and needs you, or when a bell rings, but never while you are looking at that tab: it takes the tab being in front, its pane being focused, and the window itself being frontmost. A colour per terminal, picked from the tab's own menu, paints its icon, survives a restart and becomes the colour of that signal. The terminal gets a settings tab of its own, with a toggle for each half.</dd>
+            <dd class="roadmap-item__text">The tab strip finally says what is going on inside a terminal without you opening it. A tab carries what the process announces it is doing — the name you gave it still wins, and the process title never reaches disk — and it lights up when the agent stops and needs you, or when a bell rings, but never while you are looking at that tab: it takes the tab being in front, its pane being focused, and the window itself being frontmost. It goes out for the gesture that reaches that terminal, never for the app coming to the front — a signal you did not read is never put out for you. A colour per terminal, picked from the tab's own menu, paints its icon, survives a restart and becomes the colour of that signal. The terminal gets a settings tab of its own, with a toggle for each half.</dd>
           </div>
         </dl>
       </div>
@@ -160,16 +160,12 @@
         <h2 class="h2"><span class="slash" aria-hidden="true">//</span>NEXT</h2>
         <dl class="roadmap-list">
           <div class="roadmap-item">
-            <dt class="roadmap-item__title">Calendar &amp; daily note</dt>
-            <dd class="roadmap-item__text">A month view where every day is a note, half written by hand and half by an agent.</dd>
+            <dt class="roadmap-item__title">One grammar</dt>
+            <dd class="roadmap-item__text">The same markdown typed anywhere gives the same result: <code>#tag</code> when renaming a task and not only when creating one, a link inside a table cell that is a link like everywhere else, and a tag typed <code>Like&nbsp;This</code> that stops becoming a second tag next to the one you already had.</dd>
           </div>
           <div class="roadmap-item">
-            <dt class="roadmap-item__title">On-disk index cache</dt>
-            <dd class="roadmap-item__text">Instant boot on a large vault.</dd>
-          </div>
-          <div class="roadmap-item">
-            <dt class="roadmap-item__title">Graph view</dt>
-            <dd class="roadmap-item__text">The vault as a graph of links.</dd>
+            <dt class="roadmap-item__title">The task's own state</dt>
+            <dd class="roadmap-item__text">Done stops meaning "moved column": a task gets state of its own, the board becomes one view of it rather than its definition, and "my day" can be added to and reordered by hand.</dd>
           </div>
         </dl>
       </div>
@@ -186,16 +182,12 @@
             <dd class="roadmap-item__text">A command registry, so everything the app can do is reachable by keyboard or from the switcher — including the board, the table and "my day", a scratchpad a keystroke away, and a settings tab where those keys can be changed.</dd>
           </div>
           <div class="roadmap-item">
-            <dt class="roadmap-item__title">One grammar</dt>
-            <dd class="roadmap-item__text">The same markdown typed anywhere gives the same result: <code>#tag</code> when renaming a task, not only when creating one, and links inside a table cell.</dd>
-          </div>
-          <div class="roadmap-item">
-            <dt class="roadmap-item__title">The task's own state</dt>
-            <dd class="roadmap-item__text">Done stops meaning "moved column": a task gets state of its own, the board becomes one view of it, and "my day" can be added to and reordered by hand.</dd>
-          </div>
-          <div class="roadmap-item">
             <dt class="roadmap-item__title">Make it yours</dt>
-            <dd class="roadmap-item__text">A theme editor inside the app instead of pasted CSS.</dd>
+            <dd class="roadmap-item__text">A theme editor inside the app instead of pasted CSS, and an icon picked from a list instead of a name copied into YAML by hand.</dd>
+          </div>
+          <div class="roadmap-item">
+            <dt class="roadmap-item__title">Parked, not dropped</dt>
+            <dd class="roadmap-item__text">Three that were written, measured and then lost their place on purpose: a calendar where every day is a note, an on-disk index cache for a vault large enough to need one, and the vault as a graph of links. Each comes back the day the friction it describes is the friction that bites.</dd>
           </div>
         </dl>
       </div>
